@@ -14,15 +14,14 @@ html, body {
   position: sticky; 
   top: 0;
   width: 100%;
-  padding-left: 9em;
-  padding-right: 9em;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 btn{
   color: white;
   background-color:#00cc99;
-  border-radius: 4px;
-  margin-top: 3em;
+  border-radius: .25em;
   height: auto;
   cursor: pointer;
   overflow: hidden;
@@ -64,29 +63,31 @@ btn:hover {
 .header{
   background:  url(https://i.pinimg.com/originals/33/b9/f9/33b9f99c8570eed950b9fe0358a589fa.jpg);
   background-size: cover;
-   padding: 4em;
-   overflow: hidden;
-  
-  
+  height:auto;
+  width: 100vw;
+  overflow: hidden;
 }
 
 h1{
   font-family: arial;
   font-weight: 100;
-  font-size: 60px;
+  font-size: 4em;
   color:#006699;
-  padding: auto;
+  padding: 0%;
   text-align: left;
   
 }
 
+.form{
+ padding: 10%;
+}
+
 .form-group {
-  margin-top: 6em;
-  margin-left: 6em;
   padding: 1.5em;
   background:white;
-  max-width: 40%;
-  max-height: 40%;
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19)
 }
 
 .form-control {
@@ -97,9 +98,9 @@ h1{
   color: white;
   background-color: #00cc99;
   background-clip: padding-box;
-  border: 1px  #00cc99;
+  border: 0.0625em  #00cc99;
   border-radius: 0.25em;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 .form-control:hover{
@@ -113,11 +114,11 @@ h3{
 }
 
 .container { 
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 4em;
-  padding-right: 4em;
-  margin: 2em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 2%;
   overflow: hidden;
 }
 
@@ -152,11 +153,17 @@ p{
   text-align: center;
 }
 
+figure{
+  padding: 2% 2% 3% 2%;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19)
+}
+
 #img-caption{
   font-family: arial;
   color: #006699;
   font-weight: bold;
   text-align: left;
+  padding-top:3%;
 }
 
 #image {
@@ -167,15 +174,15 @@ p{
 button {
   display: block;
   margin: auto;
-  width: 150px;
+  width: 10em;
   padding: 0.75em;
-  margin-bottom: 5em;
+  margin-bottom: 5%;
   color: #00cc99;
   background-color: white; 
-  border: 2px solid #00cc99; 
+  border: 0.125em solid #00cc99; 
   cursor: pointer;
   overflow: hidden;
-  font-size:15px;
+  font-size:1em;
  
 }
 
@@ -187,10 +194,10 @@ button:hover{
 .states{
   background-color:#05a3a3;
   background-size: cover;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  padding-left: 8em;
-  padding-right: 8em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   overflow: hidden;
 }
 
@@ -207,7 +214,7 @@ ul{
   color: white;
   font-family: arial;
   font-size: 1.2em;
-   line-height: 1.6;
+  line-height: 1.6;
 }
 
 ul li a:hover {
@@ -216,14 +223,15 @@ ul li a:hover {
 
 .footer{
   background-color: #424242;
-  padding-top:2em;
-  padding-bottom:1em;
+  padding-top:3%;
+  padding-bottom:0%;
   font-family: arial;
+  overflow: hidden;
 }
 
 .outertable{
-  padding-left: 8em;
-  padding-right: 8em;
+  padding-left: 10%;
+  padding-right: 10%;
   width: 100%;
 }
 
@@ -245,12 +253,12 @@ div.footer a:hover{
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+  padding: 1.25em;
+  font-size: 1.875em;
+  width: 1.875em;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 0.3125em 0.125em;
 }
 
 .fa:hover {
@@ -266,3 +274,132 @@ div.footer a:hover{
   background: #424242;
   color: #999999 !important;
 }
+
+
+
+
+/*Media Queries Start*/
+@media (min-width: 2559px){
+  html,body{
+   
+  } 
+}
+
+
+@media (max-width: 1440px) {
+  .form-group{
+    width: 60%;
+  }
+  
+  h1{
+    font-size: 3.5em;
+  }
+  
+}
+
+@media (max-width: 820px) {
+  .nav-left{
+    font-size: 2.5em;
+  }
+  
+  .nav-right{
+    font-size: .7em;
+  }
+  
+  .navbar btn{
+     padding: 
+  }
+  
+  h1{
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 767px) {
+ .navbar,
+ .container,
+ .states,
+ .outertable{
+   padding: 2% 5% 2% 5%;
+  }
+ 
+  .column1{
+    width: 100%;
+  }
+  
+  .column2{
+    width: 100%;
+  }
+
+  ul{
+    width: 33.33%;
+    font-size: 1.2em;
+  }
+  
+  .footer{
+    font-size: .9em;
+  }
+  
+  .form-group{
+    width: 100%;
+  }
+}
+
+@media (max-width: 594px){
+  .nav-left{
+   width: 100%;
+ 
+  }
+   .nav-right{
+    width: 33%;
+    padding: 10px;
+  }
+} 
+
+@media (max-width: 520px) {
+ .navbar,
+ .container,
+ .states,
+ .outertable,
+ .header{
+   padding: 1% 2% 1% 2%;
+  }
+  
+  h1{
+    font-size: 3em;
+  }
+  
+  ul{
+    font-size:.9em;
+  }
+  
+  .footer{
+    font-size: .7em;
+  }
+  
+  .form-group{
+    width: 100%;
+  }
+  
+  
+}
+
+
+ @media (max-width: 390px) {
+ .navbar,
+ .container,
+ .states,
+ .outertable{
+  padding: 1% 2% 1% 2%;
+  }
+   
+  h1{
+    font-size: 2.2em;
+  } 
+   
+ .form-group{
+   width: 100%;
+  }
+   
+}   
+/*Media Queries End*/
